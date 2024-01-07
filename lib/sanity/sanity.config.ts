@@ -18,11 +18,14 @@ export default defineConfig({
         return S.list()
           .title("Content")
           .items([
+            //@ts-expect-error
             orderableDocumentListDeskItem({
               type: "sample",
               title: "Samples",
               // pass from the structure callback params above
+              //@ts-expect-error
               S,
+              //@ts-expect-error
               context,
             }),
           ]);

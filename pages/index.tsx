@@ -9,17 +9,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>SOHub · Creative Digital Experiences</title>
+        <title>SOHub · Next Starter</title>
         <meta
           name="description"
-          content="SOHub is an innovative agency that builds creative digital experiences &amp; identities for companies and brands."
+          content="SOHub next starter is a template for nextjs"
         />
-        <link rel="icon" href="/favicon.png" />
-        <meta property="og:site_name" content="SOHub Digital" />
-        <meta
-          property="og:title"
-          content="SOHub · Creative Digital Experiences"
-        />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:site_name" content="SOHub Next Starter" />
+        <meta property="og:title" content="SOHub · Next Starter" />
         <meta property="og:url" content="https://sohub.digital" />
         <meta property="og:type" content="website" />
         <meta
@@ -37,39 +34,27 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sohubdigital" />
         <meta name="twitter:domain" content="sohub.digital" />
-        <meta name="theme-color" content="#5758e0" />
+        <meta name="theme-color" content="#000" />
         <meta name="robots" content="noindex,nofollow" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
       </Head>
-      <main
-        className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-      >
-        <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-          <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-            Get started by editing&nbsp;
-            <code className="font-mono font-bold">pages/index.tsx</code>
-          </p>
-          <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-            <Link
-              className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-              href="https://sohub.digital"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              NextJS Starter by SOHub
-            </Link>
-          </div>
+      <main className="w-screen h-screen bg-black">
+        <div className="absolute left-1/2 -translate-x-1/2 top-[20%] flex flex-col items-center">
+          <h1 className="text-white text-3xl">SOHub Next Starter</h1>
+          <span className="block text-white/40">
+            A great start for making any project in NextJS.
+          </span>
         </div>
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
           <Image
-            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] "
+            className="relative"
             src="/sohub.svg"
             alt="SOHub Logo"
-            width={180}
-            height={37}
+            width={220}
+            height={220}
             priority
           />
         </div>
