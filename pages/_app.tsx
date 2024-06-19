@@ -6,7 +6,7 @@ import { GeistSans } from "geist/font/sans";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div style={GeistSans.style} className="font-wrapper">
+    <div className={`${GeistSans.variable} font-geist font-wrapper`}>
       <Layout>
         <Component {...pageProps} />
       </Layout>
